@@ -2,34 +2,49 @@
 
 This is a Discord.js bot designed to grant users permission to stream when they are moved to private voice channels.
 
-## Getting Started
+# Discord.js Stream Bot Setup
 
-1. Install dependencies:
+Follow these steps to set up the Discord.js Stream Bot on your system.
 
-   ```bash
-   npm install
-   ```
+## 1. Install Required Software
 
-2. Set up your environment variables:
+Before you begin, make sure you have the following software installed on your system:
 
-   - Copy `.env.example` contents to `.env` file.
-   - Add your Discord bot token to the `.env` file:
+- **Node.js and npm:** If you don't have Node.js and npm (Node Package Manager) installed, download and install them from the official website: [Node.js Downloads](https://nodejs.org/en/download/).
 
-     ```
-     DISCORD_TOKEN=your_bot_token_here
-     ```
+- **Git:** If Git is not installed, download and install it from [Git Downloads](https://git-scm.com/downloads).
 
-3. Compile TypeScript:
+## 2. Clone the Repository
 
-   ```bash
-   npm run build
-   ```
+Open your terminal (command prompt or shell) and navigate to the directory where you want to store the Discord.js Stream Bot project. Clone the repository with the following command:
 
-4. Run the bot:
+```bash
+git clone https://github.com/VampireChicken12/guest-streams-discordjs.git
+```
 
-   ```bash
-   npm start
-   ```
+## 3. Navigate to the Project Directory
+
+Change your working directory to the project folder:
+
+```bash
+cd guest-streams-discordjs
+```
+
+## 4. Install Project Dependencies
+
+Within the project folder, run the following command to install the required dependencies:
+
+```bash
+npm install
+```
+
+## 5. Build the Bot
+
+Once the installation is complete, build the bot using the following command:
+
+```bash
+npm run build
+```
 
 ## Features
 
