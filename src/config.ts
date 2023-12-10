@@ -65,7 +65,6 @@ const { value: envVars, error } = envVarsSchema
 	.prefs({ errors: { label: "key" } })
 	.validate(Object.fromEntries(Object.entries(process.env).filter(([key]) => envKeys.includes(key as string))));
 if (error) {
-	// eslint-disable-next-line no-console
 	console.log(error);
 	throw new Error(`Config validation error: ${error.message}`);
 }
