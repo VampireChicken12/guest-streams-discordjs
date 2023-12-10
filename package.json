@@ -43,5 +43,9 @@
 		"@": "./dist"
 	},
 	"author": "VampireChicken12",
-	"license": "MIT"
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/VampireChicken12/guest-streams-discordjs.git"
+	}
 }
