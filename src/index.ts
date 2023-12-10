@@ -1,6 +1,6 @@
+import "module-alias/register";
 import Bot from "@/Bot";
 import config from "@/config";
-
 export const bot = new Bot();
 (async () => {
 	if (config.debug) {
