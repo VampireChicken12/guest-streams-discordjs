@@ -1,0 +1,60 @@
+{
+	"env": {
+		"node": true,
+		"es2021": true
+	},
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended", "plugin:import/recommended"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint", "prettier", "import"],
+	"rules": {
+		"@typescript-eslint/no-unused-vars": ["error"],
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"prettier/prettier": [
+			"error",
+			{
+				"useTabs": true,
+				"semi": true,
+				"trailingComma": "none",
+				"arrowParens": "always",
+				"printWidth": 150
+			}
+		],
+		"quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
+		"semi": ["error", "always"],
+		"prefer-const": [
+			"error",
+			{
+				"destructuring": "any",
+				"ignoreReadBeforeAssign": false
+			}
+		],
+		"prefer-destructuring": [
+			"error",
+			{
+				"array": true,
+				"object": true
+			},
+			{
+				"enforceForRenamedProperties": true
+			}
+		],
+		"no-useless-escape": "off",
+		"no-empty": ["error", { "allowEmptyCatch": true }],
+		"import/no-unresolved": "off",
+		"import/first": ["error"],
+		"import/order": [
+			"error",
+			{
+				"groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"]
+			}
+		]
+	}
+}

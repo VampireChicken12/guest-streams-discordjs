@@ -1,0 +1,39 @@
+{
+	"ts-node": {
+		"files": true,
+		"swc": true,
+		"transpileOnly": true,
+		"logError": true
+	},
+	"ts-node-dev": {
+		"files": true,
+		"swc": true,
+		"transpileOnly": true,
+		"logError": true
+	},
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "ES2021",
+		"moduleResolution": "node",
+		"resolveJsonModule": false,
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"rootDir": "./src",
+		"outDir": "./dist",
+		"noErrorTruncation": true,
+		"noUncheckedIndexedAccess": true,
+		"allowJs": false,
+		"strict": true,
+		"verbatimModuleSyntax": false,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"declaration": true,
+		"incremental": true,
+		"skipLibCheck": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	},
+	"include": ["./src"],
+	"exclude": ["node_modules", "./dist"]
+}
