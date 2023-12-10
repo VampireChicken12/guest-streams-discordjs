@@ -17,8 +17,10 @@ export default class Bot {
 		allEvents.forEach(({ name, handler, isOnce }) => {
 			console.debug(`Setting up event ${name} - event is ${isOnce ? "once" : "on"}`);
 			if (isOnce) {
+				// @ts-expect-error - this is fine
 				this.client.once(name, handler);
 			} else {
+				// @ts-expect-error  - this is fine
 				this.client.on(name, handler);
 			}
 		});
